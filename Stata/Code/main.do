@@ -21,7 +21,6 @@
 	global code 	"${github}/Stata/Code"
 	global outputs 	"${github}/Stata/Outputs"
 	
-	sysdir set PLUS "???"
 
 
 	* Install packages 
