@@ -11,8 +11,8 @@
 	
 	* Add file paths to DataWork folder and the Github folder for RRF2024
 	if "`c(username)'" == "" {
-        *global onedrive "???/DataWork"
-		global github 	"???/GitHub-rrf-24"
+        global onedrive "???/DataWork"
+		global github 	"???/GitHub-rrf-25"
     }
 	
 	
