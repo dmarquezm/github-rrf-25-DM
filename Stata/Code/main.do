@@ -3,16 +3,16 @@
 *******************************************************************************/
 
 	* Set version
-	*version ???
+	version 17
 
 	* Set project global(s)	
 	// User: you 
 	display "`c(username)'" 	//Check username and copy to set project globals by user
 	
 	* Add file paths to DataWork folder and the Github folder for RRF2024
-	if "`c(username)'" == "" {
-        global onedrive "???/DataWork"
-		global github 	"???/GitHub-rrf-25"
+	if "`c(username)'" == "danie" {
+        global onedrive "C:\Users\danie\Dropbox\DECDI reproducible research course/DataWork"
+		global github 	"C:\Users\danie\Documents\Github\github-rrf-25-DM"
     }
 	
 	
@@ -21,7 +21,7 @@
 	global code 	"${github}/Stata/Code"
 	global outputs 	"${github}/Stata/Outputs"
 	
-
+	sysdir set PLUS "${code}/ado"
 
 	* Install packages 
 	local user_commands	ietoolkit iefieldkit winsor sumstats estout keeporder grc1leg2 //Add required user-written commands
